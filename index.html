@@ -13,19 +13,19 @@
         }
         header {
             text-align: center;
-            padding: 100px 0; /* ヘッダーの縦の大きさを調整 */
+            padding: 90px 0; /* デスクトップ用のヘッダーサイズ */
             color: white;
             background-image: url('images/header-image.png');
             background-size: cover;
             background-position: center;
         }
         header h1 {
-            font-size: 3em; /* タイトルの文字サイズを大きくする */
-            margin: 0; /* 余白を削除 */
+            font-size: 3em; /* デスクトップ用のタイトル文字サイズ */
+            margin: 0;
         }
         header p {
-            font-size: 1.5em; /* サブタイトルの文字サイズを大きくする */
-            margin: 10px 0; /* 少し余白を加える */
+            font-size: 1.5em; /* デスクトップ用のサブタイトル文字サイズ */
+            margin: 10px 0;
         }
         main {
             max-width: 800px;
@@ -41,6 +41,19 @@
             text-align: center;
             margin-top: 50px;
             color: #4682b4;
+        }
+
+        /* スマホなどの小さい画面用のスタイル調整 */
+        @media (max-width: 600px) {
+            header {
+                padding: 50px 0; /* ヘッダーの縦のスペースを減らす */
+            }
+            header h1 {
+                font-size: 2em; /* タイトル文字サイズを小さくする */
+            }
+            header p {
+                font-size: 1.2em; /* サブタイトルの文字サイズを小さくする */
+            }
         }
     </style>
 </head>
