@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>第2回卒定戦 タナリョウ杯</title>
     <style>
-        body {
+        html, body {
+            margin: 0; /* bodyとhtmlの余白をリセット */
+            padding: 0;
             font-family: Arial, sans-serif;
             background-color: #f0f8ff;
-            margin: 0;
-            padding: 20px;
         }
         header {
             text-align: center;
@@ -22,11 +22,11 @@
             margin: 0;    /* 余白をなくす */
         }
         header h1 {
-            font-size: 3em; /* デスクトップ用のタイトル文字サイズ */
+            font-size: 3em;
             margin: 0;
         }
         header p {
-            font-size: 1.5em; /* デスクトップ用のサブタイトル文字サイズ */
+            font-size: 1.5em;
             margin: 10px 0;
         }
         main {
@@ -48,13 +48,13 @@
         /* スマホなどの小さい画面用のスタイル調整 */
         @media (max-width: 600px) {
             header {
-                padding: 50px 0; /* ヘッダーの縦のスペースを減らす */
+                padding: 50px 0;
             }
             header h1 {
-                font-size: 1.5em; /* タイトル文字サイズを小さくする */
+                font-size: 2em;
             }
             header p {
-                font-size: 1.2em; /* サブタイトルの文字サイズを小さくする */
+                font-size: 1.2em;
             }
         }
     </style>
