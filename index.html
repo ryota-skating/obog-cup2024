@@ -13,11 +13,19 @@
         }
         header {
             text-align: center;
-            padding: 50px 0;
+            padding: 100px 0; /* ヘッダーの縦の大きさを調整 */
             color: white;
-            background-image: url('images/header-image.png'); /* 画像ファイルのパスを指定 */
-            background-size: cover; /* 画像をヘッダー全体にフィットさせる */
-            background-position: center; /* 画像を中央に配置 */
+            background-image: url('your-image-path.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        header h1 {
+            font-size: 3em; /* タイトルの文字サイズを大きくする */
+            margin: 0; /* 余白を削除 */
+        }
+        header p {
+            font-size: 1.5em; /* サブタイトルの文字サイズを大きくする */
+            margin: 10px 0; /* 少し余白を加える */
         }
         main {
             max-width: 800px;
