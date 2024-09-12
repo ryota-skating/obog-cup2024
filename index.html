@@ -13,17 +13,20 @@
         }
         header {
             text-align: center;
-            padding: 50px 0; /* 上下の余白を設定 */
+            padding: 0; /* 上下の余白をなくす */
+            margin: 0; /* ヘッダーの余白をなくす */
             color: white;
             background-image: url('images/header-image.png');
-            background-size: cover;
+            background-size: contain; /* 画像が切れないように調整 */
+            background-repeat: no-repeat;
             background-position: center;
             width: 100vw; /* 横幅を100%に設定 */
-            margin: 0;
+            height: auto; /* 画像の高さに合わせる */
         }
         header h1 {
             font-size: 4em;
             margin: 0;
+            padding-top: 20px; /* ヘッダーの上に余白を追加 */
         }
         header p {
             font-size: 2em;
@@ -47,9 +50,6 @@
 
         /* スマホなどの小さい画面用のスタイル調整 */
         @media (max-width: 600px) {
-            header {
-                padding: 30px 0; /* 小さい画面での余白を調整 */
-            }
             header h1 {
                 font-size: 1.5em;
             }
